@@ -22,3 +22,12 @@ Projeto:
 Dois inputs number que irá somar e irá mostrar a soma no console.log
 
 Crie um aquivo em html e js
+
+
+Arquivos criado e implementado a lógica, faça um teste.
+Digite por exemplo no primeiro input 3 e no segundo 2, o resultado esperado é 5, mas veio 32
+
+Pq ele não somou? 
+js entende que é uma concatenação de strings e junta o input1 + input2, ao inves de somar.
+
+Como o TypeScript corrigiria esse problema?
