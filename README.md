@@ -16,4 +16,17 @@
   <li>"Ele é verboso demais, precisa tipar tudo!"</li>
   <li>"Só serve para projeto grande."</li>
   <li>"É só usar PropTypes que dá na mesma."</li>
+ </ul>
+  
+  <h4>Aula 03 -Instalando o compilador e escrevendo primeiro código</h4>
+  <ul>
+    <li>Instalação</li>
+    <li>Projeto</li>
+    <li>"Erro" ao executa o projeto em JavaScript</li>
+    <li>Corrigindo o erro utilizando TypeScript</li>
+    <li>Conflito entre types </li>
+    <li>Compilando arquivo TypeScript</li>
+    <li>Resolvendo conflito entre types</li>
+    <li>Executando o projeto em TypeScript sem erro</li>
+  </ul>
                                         
