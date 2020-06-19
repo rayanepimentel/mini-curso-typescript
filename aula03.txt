@@ -31,3 +31,13 @@ Pq ele não somou?
 js entende que é uma concatenação de strings e junta o input1 + input2, ao inves de somar.
 
 Como o TypeScript corrigiria esse problema?
+
+A primeira coisa é criarmos um novo arquivo index.ts e copiar o index do js e colocar no ts
+
+Repare que ele já começou a mostrar alguns erros. Comente o código do index.js
+Mesmo assim retornou o erro em .value A propriedade 'value' não existe no tipo 'HTMLElement'
+
+Pq ele não exite?
+pq ele é um tipo HTMLElement
+
+Precisamos dizer que o nosso input é tipo HTMLElement
