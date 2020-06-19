@@ -1,0 +1,28 @@
+- Criando e configurando o TSConfig
+
+-> Criando o arquivo TSConfig
+
+Como vimos ele está compilando só um arquivo  tsc script.ts 
+Como fazemos se tivermos mais arquivos .ts ?
+
+Não estamos definindo pastas e nem regras que queremos seguir.
+E para definir todas essas coisas, temos um arquivo para isso o TSConfig.
+
+Dentro desse arquivo vamos definir várias regras, seja de pastas, do TypeScript, tudo o que queremos
+definir, será nesse arquivo.
+
+Criando o arquivo TSConfig:
+
+No terminal digite: tsc --init
+
+Foi criado o arquivo tsconfig.json
+
+Nele temos vários comentários.
+Procure por outDir, iremos definir onde será gerados os arquivos, por exemplo em dist
+
+E no terminal digite: tsc
+
+Deu erro em button> Possivelmente, o objeto é 'nulo'.
+Como sabemos que ele existe ID e temos certeza, coloque ponto de exclamação !
+
+Resolvido, e verifique se a pasta foi criada dist com nosso arquivo compilado .js ("use strict";)
