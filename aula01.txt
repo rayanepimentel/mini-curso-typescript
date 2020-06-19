@@ -1,0 +1,107 @@
+- Introdução ao TypeScript
+
+O que é TypeScript?
+
+-> É um superset do JavaScript
+
+-> Adicona novas features ao JavaScript
+O que são essas novas features?
+
+-> Basicamente, tipagem estática!
+
+Tipagem estática é quando definimos o tipo das nossas variáveis, retornos, funções...dentro do
+código, antes da compilação. 
+Determinamos os tipos, tem um processo de compilação, que irá verificar se de fato os tipos estão
+corretos, feito de acordo com o que vc definiu.
+
+Resumindo: O TypeScript no final irá compilar para JavaScript.
+
+
+-> compilar para JavaScript
+
+Você vai definir os tipos, vai escrever em TypeScript mas no final o seu resultado vai ser em
+JavaScript.
+
+-> Permite adoção gradual(arquivos .ts convivem com .js)
+Afinal o TypeScript é um superset, a sintaxe é a mesma. Ex: uma função console.log()
+A diferença é que teremos tipos e algumas coisas a+ que podemos definir tipos de forma melhor.
+
+*************************************************
+
+"Mas então, é linguagem ou não é?"
+
+É o que vc quiser(linguagem ou superset do JS). Muitos já entendem TypeScript como linguagem, a própria microsoft já utiliza
+a definição como linguagem, outros já dizem que não.
+
+************************************************
+
+Por que usar o TypeScript?
+
+-> Evita resultados inesperados
+
+Como JavaScript é dinâmico, podemos atribuir var  de um tipo e de outro dentro do mesmo código, isso pode ter alguns
+retornos inesperados. E a própria forma do JavaScript funcionar retorna coisas inesperadas.
+
+function sum(a, b) {
+    return a + b
+}
+
+sum(1, 2)//3
+sum('1', '2')// 12 aqui js entende que é uma concatenação de strings e junta 1 e 2 = 12
+E não iremos visualizar esse erro em nenhum lugar. pq? como js é dinâmico a nossa var a pode receber o que quiser.
+Sá vamos descobrir esse erro quando alguém reportar.
+
+Já no TypeScript não. No momento que você atribui tipo daquela var, aquela var só pode receber aquele tipo.
+O tipo de erro no exemplo, não teriamos em TypeScript.
+
+-> Avisa se estiver fazendo algo errado.
+
+console.log(4 / [])// dividir número pelo array -> ele informa que não era esperado esse tipo e sim os tipos tal.
+
+
+-> Já funciona como uma espécie de documentação
+
+Como assim?
+Eu consigo definir por exemplo type Plarform = 'Linux' | 'Windows'
+
+em plataforms: Plarform[] // eu defino que é um array de Plarform. Eu to dizendo que é um array, mas só pode ser Linux ou
+Windows.
+
+type Plarform = 'Linux' | 'Windows'
+type Feature = 'Single Player' | 'Multiplayer' | 'Co-op'
+
+interface GameDetails {
+    id: string
+    title: string
+    description: string
+    plataforms: Plarform[]
+    features: Feature[]
+}
+
+Qual é a vantagem? 
+A vantagem de ter essa tipagem é que eu já consigo saber na hora, enquanto eu estou codando, o que é cada coisa.
+Por exemplo, entro em um projeto e não sei qual o tipo é o id, será se eles usam number ou string?
+Ali eu já vejo que o tipo é string. 
+
+
+-> Deixa sua IDE extremamente poderosa
+
+
+
+************************************************
+
+Desvantagens do TypeScript
+
+-> Necessita ser compilado(mais passos no tooling)
+
+-> Aprendizado inicial dos tipos e boas práticas
+
+-> Erros nem sempre muitos claros ou então muito grandes
+
+
+
+
+
+
+
+
