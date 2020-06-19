@@ -22,7 +22,7 @@
   <ul>
     <li>Instalação</li>
     <li>Projeto</li>
-    <li>Erro ao executa o projeto em JavaScript</li>
+    <li>"Erro" ao executa o projeto em JavaScript</li>
     <li>Corrigindo o erro utilizando TypeScript</li>
     <li>Conflito entre types </li>
     <li>Compilando arquivo TypeScript</li>
