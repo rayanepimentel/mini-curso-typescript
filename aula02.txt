@@ -9,7 +9,7 @@ Claro, alguns detalhes que você terá que aprender.
 Verdade: tem qua aprender algumas coisas.
 Mentira: Não é tudo de novo.
 
--> "Vou precisar reescrever tudo para TypeScript"
+-> "Vou precisar reescrever tudo para TypeScript."
 
 Não é verdade!
 Você pode fazer a adoção gradual(com arquivos em .js e com arquivos em .ts no mesmo projeto)
@@ -19,7 +19,7 @@ Você pode fazer a adoção gradual(com arquivos em .js e com arquivos em .ts no
 Bão é verdade.
 Existe alguns casos que os teste não irão pegar. O TypeScript está ai para ajudar nesses casos.
 
--> "Só funciona com Programação Orientada a Objeto"
+-> "Só funciona com Programação Orientada a Objeto."
 
 Não é verdade.
 Claro quando o TypeScript começou ele era bem fundamentado em dotNet, em C# que é Orientada a Objeto.
@@ -31,13 +31,13 @@ Não é verdade.
 Sim, de fato vc irá escrever um pouco a mais, pq vc tem que definir os tipos. MAs isso não necessáriamente diz que você
 precisa colocar tipo em tudo.
 
--> "Só serve para projeto grande"
+-> "Só serve para projeto grande."
 
 Não é verdade.
 Na realidade você pode utilizar em qualquer projeto, seja ele pequeno ou grande, não irá fezer diferença.
 
 
--> "É só usar PropTypes que dá na mesma"
+-> "É só usar PropTypes que dá na mesma."
 
 Não é verdade.
 Só PropTypes em si, ele não bloqueia, ele não mostra os erros...
