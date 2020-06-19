@@ -1,0 +1,24 @@
+- Criando e configurando TSconfig
+
+-> Instalar o compilador TypeScript e como rodar o TypeScript
+
+Instalação:
+
+NodeJs
+TypeScript
+IDE
+
+Para instalar é preciso ter o nodeJS. Verifique no terminal se você já tem nodeJS com comando: $ node -v
+Caso não tenha nodeJS veja como instalar aqui https://nodejs.org/en/
+
+NodeJs ok, agora vamos instalar o TypeScript: https://www.typescriptlang.org/
+
+No terminal digite: npm install -g typescript
+
+E você precisa de uma IDE, a utilizada no curso é Visual Studio Code
+
+Projeto:
+
+Dois inputs number que irá somar e irá mostrar a soma no console.log
+
+Crie um aquivo em html e js
