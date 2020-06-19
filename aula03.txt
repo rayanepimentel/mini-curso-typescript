@@ -62,4 +62,11 @@ Property 'value' does not exist on type 'HTMLElement'.
                                             ~~~~~
 
 
-Exatamente o mesmo erro que vimos no vs code.                                           
+Exatamente o mesmo erro que vimos no vs code.     
+
+
+Corrigindo o conflito:
+
+Como eu sei que input é string e eu não quero, precisamos parciar essa string e dizer que isso vai ser um number.
+
+Agora digite 3 e depois 2, o resultado é 5, isso mesmo agora temos o resultado certinho.

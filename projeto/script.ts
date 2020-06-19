@@ -10,5 +10,6 @@ function sum(a: number, b: number) {
 }
 
 button.addEventListener("click", function() {
-    console.log(sum(input1.value, input2.value));
+    //precisamos informar que o input precisa ser um Number
+    console.log(sum(Number(input1.value), Number(input2.value)));
 });
