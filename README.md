@@ -1,1 +1,1 @@
-echo # mini-curso-typescript
+#Mini curso gratuito Typescript
