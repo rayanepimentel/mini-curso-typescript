@@ -40,4 +40,7 @@ Mesmo assim retornou o erro em .value A propriedade 'value' não existe no tipo 
 Pq ele não exite?
 pq ele é um tipo HTMLElement
 
-Precisamos dizer que o nosso input é tipo HTMLElement
+Precisamos dizer que o nosso input é tipo HTMLElement;
+
+Mas ele nos informar que o nosso a tá implicido como any, e não é uma boa praticar em TypeScript.
+Precisamos passar o tipo para ele e para o b, que é number
