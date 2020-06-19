@@ -43,4 +43,23 @@ pq ele é um tipo HTMLElement
 Precisamos dizer que o nosso input é tipo HTMLElement;
 
 Mas ele nos informar que o nosso a tá implicido como any, e não é uma boa praticar em TypeScript.
-Precisamos passar o tipo para ele e para o b, que é number
+Precisamos passar o tipo para ele e para o b, que é number.
+
+Mas como vimos ele quebrou em .value
+Ele informa que o argumento do tipo string, não pode ser um paramentro do tipo number.
+
+Ou seja, ele descobriu que o type do .value é string e o paramentro é number.
+
+Compile o arquivo .ts e veja o erro:
+No terminal digite:
+tsc index.ts --watch
+
+O erro foi:
+
+Property 'value' does not exist on type 'HTMLElement'.
+
+13     console.log(sum(input1.value, input2.value));
+                                            ~~~~~
+
+
+Exatamente o mesmo erro que vimos no vs code.                                           
