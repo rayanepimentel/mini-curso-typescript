@@ -88,3 +88,14 @@ function error(): never {
 }
 
 //Estamos dizendo que essa função nunca irá retornar, ela só vai jogar o erro na tela
+
+
+//object
+//É tudo aquilo que não é string, array, number e nem boolean
+
+let cart: object
+//cart = true
+
+cart = {
+    key: 123
+}

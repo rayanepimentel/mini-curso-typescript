@@ -122,3 +122,20 @@ function error(): never {
 }
 
 Estamos dizendo que essa função nunca irá retornar, ela só vai jogar o erro na tela
+
+
+-> Type object
+
+É tudo aquilo que não é string, array, number e nem boolean, é qualquer coisa que
+não seja nenhum desses tipos primitivos.
+
+let cart: object
+
+se passarmos true, ele vai informar que tá erradi
+cart = true
+
+mas se passarmos key: 123 ele vai funcionar, pq é um object
+
+cart = {
+    key: 123
+}
