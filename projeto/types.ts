@@ -47,3 +47,10 @@ title = [1, 'foo']
 //outro exemplo de tupla
 let form: [number, string, boolean, number]
 form = [1, 'bar', true, 2]
+
+//enum
+//É um enumeration que server para criamos um conjunto de chave e valor.
+enum Colors {
+    white = '#fff',
+    black = '#000'
+}

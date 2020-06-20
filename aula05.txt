@@ -52,3 +52,22 @@ Eu digo que é um array, mas só que eu já sei o que vai ter ali dentro.
 Ex: primeiro valor é um numero e o segundo é uma string
 let title: [number, string]
 title = [1, 'foo']
+
+-> Type enum
+
+O que é um enum?
+É um enumeration que server para criamos um conjunto de chave e valor.
+Digamos qque temos um select cms que as pessoas precisam selecionar as cores. Mas a pessoa é leiga
+e não sabe hexadecimal, ela só saber roxo, verde, azul..
+Nesse caso podemos usar o enum, passamo a chave com o valor bonitinho e o valor final na realidade
+é o hexadecimal.
+
+ex:
+
+enum Colors {
+    white = '#fff',
+    black = '#000'
+}
+
+enum basicamente serve para criamos um conjunto de chave e valor, para encontramos uma chamada mais fácil
+o valor que desejamos.
