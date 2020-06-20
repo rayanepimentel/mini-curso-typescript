@@ -104,4 +104,21 @@ function logger() {
 
 -> Type null | undefined
 
-É basicamente quando não sabemos o valor, valor não foi definido
+É basicamente quando não sabemos o valor, valor não foi definido.
+
+-> Type never
+
+É o tipo que dizemos que nunca irá retornar.
+É basicamente quando iremos jogar um erro na tela throw
+
+throw new Error("error");
+Estamos falando, isso ai vai jogar um novo erro.
+
+criamos uma função
+function error, eu posso dizer que ela nunca vai retornar
+
+function error(): never {
+    throw new Error("error");
+}
+
+Estamos dizendo que essa função nunca irá retornar, ela só vai jogar o erro na tela

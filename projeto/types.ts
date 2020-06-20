@@ -80,3 +80,11 @@ type Bla = string | undefined
 //estamos dizendo que esse tipo novo que criamos (não é um tipo primitivo), pode ser
 //uma string ou indefinido
 //mas não é a conselhado usar com tipo primitivo
+
+//never
+
+function error(): never {
+    throw new Error("error");
+}
+
+//Estamos dizendo que essa função nunca irá retornar, ela só vai jogar o erro na tela
