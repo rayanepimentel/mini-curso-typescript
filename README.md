@@ -35,4 +35,20 @@
     <li>Criando o arquivo TSConfig</li>
     <li>Configurando o arquivo TSConfig</li>
   </ul>
+  
+  <h4>Aula 05 - Types</h4>
+  <ul>
+  <li>Boolean</li>
+  <li>String</li>
+  <li>Number</li>
+  <li>Array</li>
+  <li>Tuple</li>
+  <li>Enum</li>
+  <li>Any</li>
+  <li>Void</li>
+  <li>null | undefined</li>
+  <li>Never</li>
+  <li>Object</li>
+  </ul>
+    
                                         
