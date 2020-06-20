@@ -46,7 +46,7 @@
   <li>Enum</li>
   <li>Any</li>
   <li>Void</li>
-  <li>null | undefined</li>
+  <li>Null | undefined</li>
   <li>Never</li>
   <li>Object</li>
   </ul>
