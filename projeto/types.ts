@@ -12,3 +12,9 @@ message = `foo ${isOpen}`
 // no ` ` podemos passar a var booleana que ele continua funcionando normal
 //pq? pq ele considera tudo dentro ` `é uma string, por mais que tenha dentro um booleano, não importa
 //no final é uma string
+
+//type number (int, float, hexadecimal, binario)
+let total: number
+//total = 20
+//total = 20.3
+total = 0xff0
