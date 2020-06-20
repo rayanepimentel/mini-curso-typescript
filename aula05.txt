@@ -91,3 +91,9 @@ let coisa
 coisa = true
 
 Ou seja, é qualquer coisa. A ideia de tipar a var acaba morrendo
+
+-> Type void
+
+Void é o mesmo que vazio.
+É quando não retorna nada, não tem retorno
+O void é para tipar funções que não retorna nada

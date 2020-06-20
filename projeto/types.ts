@@ -60,3 +60,16 @@ let coisa: any
 //eu posso atribuir coisa, qualquer coisa
 //Pode ser boolean, string, number, array
 coisa = true
+
+//void (vazio)
+//não tem retorno
+
+/*function logger() {
+    console.log('foo')
+}*/
+
+//o console.log não retorna nada, ele joga no console, mas não retorna
+
+function logger() :void {
+    console.log('foo')
+}
