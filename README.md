@@ -10,7 +10,7 @@
 <h4>Aula 02 - Mitos e verdades do TypeScript</h4>
 <ul>
   <li>"Vou ter que aprender tudo de novo!"</li>
-  <li> "Vou precisar reescrever tudo para TypeScript."</li>
+  <li>"Vou precisar reescrever tudo para TypeScript."</li>
   <li>"Já escrevo testes, não preciso disso."</li>
   <li>"Só funciona com Programação Orientada a Objeto."</li>
   <li>"Ele é verboso demais, precisa tipar tudo!"</li>
@@ -18,7 +18,7 @@
   <li>"É só usar PropTypes que dá na mesma."</li>
  </ul>
   
-  <h4>Aula 03 -Instalando o compilador e escrevendo primeiro código</h4>
+  <h4>Aula 03 - Instalando o compilador e escrevendo primeiro código</h4>
   <ul>
     <li>Instalação</li>
     <li>Projeto</li>
@@ -28,5 +28,11 @@
     <li>Compilando arquivo TypeScript</li>
     <li>Resolvendo conflito entre types</li>
     <li>Executando o projeto em TypeScript sem erro</li>
+  </ul>
+  
+  <h4>Aula 04 -  Criando e configurando o TSConfig</h4>
+  <ul>
+    <li>Criando o arquivo TSConfig</li>
+    <li>Configurando o arquivo TSConfig</li>
   </ul>
                                         
