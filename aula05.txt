@@ -71,3 +71,23 @@ enum Colors {
 
 enum basicamente serve para criamos um conjunto de chave e valor, para encontramos uma chamada mais fácil
 o valor que desejamos.
+
+-> Type any
+
+Any é o tipo mais exclusivo do TypeScript
+O any significa qualquer coisa
+
+Ex:
+
+let coisa: any
+//eu posso atribuir coisa, qualquer coisa
+//Pode ser boolean, string, number, array
+coisa = 1 
+
+Mas não é legal, pq estamos dizendo que é qualquer coisa é a mesma coisa que não 
+falarmos nada dela.
+
+let coisa
+coisa = true
+
+Ou seja, é qualquer coisa. A ideia de tipar a var acaba morrendo

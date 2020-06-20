@@ -54,3 +54,9 @@ enum Colors {
     white = '#fff',
     black = '#000'
 }
+
+//any (qualquer coisa)
+let coisa: any
+//eu posso atribuir coisa, qualquer coisa
+//Pode ser boolean, string, number, array
+coisa = true
