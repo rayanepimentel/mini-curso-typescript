@@ -18,3 +18,32 @@ let total: number
 //total = 20
 //total = 20.3
 total = 0xff0
+
+//Type array (type[])
+//digo o que é array[], mas preciso passar antes o que tem dentro dele
+//eu estou dizendo que é um array, dentro desse array eu tenho vários números
+let items: number[]
+//eu posso criar meu array com vários numeros
+items = [1, 2, 3, 4, 5]
+//se você mudar para string, ele vai informar O tipo 'number' não pode ser atribuído ao tipo 'string'
+let item: string[]
+//item = [1, 2, 3, 4, 5]
+//Pq estamos dizendo que o array tem várias strigs e não números.
+//agora passe strigs dentro do array
+item = ['foo', 'bar']
+
+//existe outra forma ex:
+let itemA: Array<number>
+itemA = [1, 2, 3]
+
+//type tupla 
+//tupla:  um array, onde eu sei a quantidade items e o que é.
+//por ex, o primeiro elemento é um numero e o segundo é uma string
+let title: [number, string]
+title = [1, 'foo']
+//tenta passar um 3 valor
+//vai retorna com erro:  O tipo '3' não pode ser atribuído, afinal só temos 2 variaveis na nossa tupla title
+
+//outro exemplo de tupla
+let form: [number, string, boolean, number]
+form = [1, 'bar', true, 2]

@@ -26,3 +26,29 @@ e dentro ` ` podemos passar o boolean, pois ele reconhece que tudo dentro ` ` é
 -> Number
 
 Funciona para int, float, hexadecimal e binário
+
+-> Array
+
+Para definir o array é um pouquinho diferente.
+Digamos que temos um let items, eu digo que é um array, mas eu preciso informar o que tem dentro 
+daquele array
+let items: number[]
+items: [1, 2, 3]
+Se você mudar mumber para string, dará erro, pq estamos dizendo que o array é uma string, mas estamos
+passando números. 
+let items: string[]
+Ou seja O tipo 'number' não pode ser atribuído ao tipo 'string'
+
+Existe outra forma, informamos para a nossa var que é um Array<type>
+let itemA: Array<number>
+itemA = [1, 2, 3]
+
+-> Tuple
+
+Um tipo novo, mas nada mais é que um array, onde já sabemos o número de elementos dentro desse array e 
+também o tipo dele.
+Temos uma let title e dizemos que é uma tupla
+Eu digo que é um array, mas só que eu já sei o que vai ter ali dentro.
+Ex: primeiro valor é um numero e o segundo é uma string
+let title: [number, string]
+title = [1, 'foo']
