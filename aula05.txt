@@ -1,0 +1,17 @@
+- Types
+
+A parte mais importar de TypeScript: Como criar os types.
+
+Primeira coisa vamos criar um novo arquivo: type.ts
+Vamos falar sobre tipos, existe os tipos que já conhecemos os primitivos e os novos 
+que o TypeScript implementou.
+
+O primeiro tipo que iremos aprender é o boolean, que já conhecemos.
+Boolean só pode retornar 2 valores, true ou talse;
+Por exemplo, nomei uma variável que receba o valor booleano e depois em algum momento
+eu posso passar essa var como false ou true.
+
+Passe o valor da var que declamos para true, mas entre aspas.
+erro: O tipo '"true"' não pode ser atribuído ao tipo 'boolean'
+Pq ele é uma string e não um boolean
+
