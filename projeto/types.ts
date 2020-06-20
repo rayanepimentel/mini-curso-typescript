@@ -73,3 +73,10 @@ coisa = true
 function logger() :void {
     console.log('foo')
 }
+
+//null | undefined
+
+type Bla = string | undefined
+//estamos dizendo que esse tipo novo que criamos (não é um tipo primitivo), pode ser
+//uma string ou indefinido
+//mas não é a conselhado usar com tipo primitivo

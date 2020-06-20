@@ -96,4 +96,12 @@ Ou seja, é qualquer coisa. A ideia de tipar a var acaba morrendo
 
 Void é o mesmo que vazio.
 É quando não retorna nada, não tem retorno
-O void é para tipar funções que não retorna nada
+O void é para tipar funções que não retorna nada.
+
+function logger() {
+    console.log('foo')
+}
+
+-> Type null | undefined
+
+É basicamente quando não sabemos o valor, valor não foi definido
