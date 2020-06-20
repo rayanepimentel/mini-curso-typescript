@@ -6,6 +6,8 @@ Primeira coisa vamos criar um novo arquivo: type.ts
 Vamos falar sobre tipos, existe os tipos que já conhecemos os primitivos e os novos 
 que o TypeScript implementou.
 
+-> Boolean
+
 O primeiro tipo que iremos aprender é o boolean, que já conhecemos.
 Boolean só pode retornar 2 valores, true ou talse;
 Por exemplo, nomei uma variável que receba o valor booleano e depois em algum momento
@@ -15,3 +17,6 @@ Passe o valor da var que declamos para true, mas entre aspas.
 erro: O tipo '"true"' não pode ser atribuído ao tipo 'boolean'
 Pq ele é uma string e não um boolean
 
+-> String
+A string pode ser representado de três formas, 'foo', "foo" e `foo`
+e dentro ` ` podemos passar o boolean, pois ele reconhece que tudo dentro ` ` é uma string
