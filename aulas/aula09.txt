@@ -16,3 +16,5 @@ npm install -g nodemon
 depois de instalado:
 nodemon dist/classes.js ou onde estiver o arquivo de js 
 
+-> Outra coisa que podemos fazer é criar um método, dentro do nosso objeto.
+Vamos criar um método logDetails, não vai receber nada e vai retornar um void, que vai ser um console.log
