@@ -1,0 +1,29 @@
+- Type Aliases e Union
+
+Nas aulas anteriores aprendemos sobre typos e Inference. Mas existe alguns momentos que queremos usar tipos um pouco mais
+complexos ou com alguns detalhes a mais. Para isso temos Union e o Type Aliases.
+
+-> Como eles funcionam?
+
+Crie um novo arquivo logDetails.ts, crie uma função, que recebe um uid e um item.
+console.log de qualquer coisa (`qualquer coisa ${uid} e coisa qualquer ${item}`)
+Podemos dizer que o uid é number e item é uma string
+
+se passamos logDetails(123, 'casa'), vai funcionar, se vc mudar 123 para strinf '123', não vai funcionar
+pq não podemos assinalar uma string pro number
+
+Mas no meu caso, o id por ser sim uma string, no meu banco de dados ele aceita.
+
+Para podermos falar que esse uid é de um tipo ou de outro, utilizamos o Union 
+é basicamente isso: uid: number | string ou seja uid pode ser do tipo number ou string
+
+function logDetails2(uid: number | string, item: string) {
+    console.log(`qualquer coisa ${uid} e coisa qualquer ${item}`)
+}
+
+Digamos que eu tenha uma nova function logInfo vai ter um uid que pode ser number ou string e user string
+
+function logInfo(uid: number | string, user: string){
+    `qualquer coisa ${uid} e coisa qualquer ${user}.`
+}
+
