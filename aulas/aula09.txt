@@ -1,0 +1,18 @@
+- Classes
+
+As classes não são obrigatórias no TypeScript, mas são úteis.
+
+Primeira coisa, crie um arquivo classes.ts e crie uma class e dentro dela defina as propriedades.
+Para poder criar o objeto, precisamos de um metodo, que é o constructor(), e o constructor recebe as propriedades com qual 
+o meu objeto vai receber.
+
+Recebendo esses valores, já conseguimos assinalar esses valores utilizando o this. que é o objeto dessa class
+e a propriedade ex: this.name que vai receber o valor de name que foi passado.
+
+Feito isso, crie um objeto dessa class e faça console.log
+
+No terminal instale nodenom
+npm install -g nodemon
+depois de instalado:
+nodemon dist/classes.js ou onde estiver o arquivo de js 
+
