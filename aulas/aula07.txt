@@ -27,3 +27,14 @@ function logInfo(uid: number | string, user: string){
     `qualquer coisa ${uid} e coisa qualquer ${user}.`
 }
 
+-> Type Aliases
+
+Só que repare que estamos usando uid: number | string, tanto na funcion logDetails2 e na logInfo
+Como estamos usando a mesma coisa, podemos fazer o seguinte:
+criar um type Aliases, que vai ser um tipo que irá unir  number | string mas que eu possa reutilizar
+de uma forma mais simples. Como assim?
+
+Basta digitar type nomear ai passamos que pode ser um number | string
+type Uid = number | string
+Na função ao inves de escrever uid: number | string, eu coloco uid: Uid
+

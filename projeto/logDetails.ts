@@ -24,3 +24,18 @@ function logInfo(uid: number | string, user: string){
 
 logInfo(123, 'maria') //vai funcionar
 logInfo('123', 'maria') //vai funcionar
+
+//type Alias
+//cria um tipo que recebe por exemplo number | string 
+type Uid = number | string
+//e eu passo esse tipo na função
+
+function logDetails3(uid: Uid, item: string) {
+    console.log(`qualquer coisa ${uid} e coisa qualquer ${item}`)
+}
+
+logDetails3('567', 'roupa')
+logDetails3(567, 'roupa')
+
+//com type Alias eu consigo facilitar o meu código para que eu não precise escrever 
+//várias vezes a mesma coisa.
