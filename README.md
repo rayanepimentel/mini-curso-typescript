@@ -50,5 +50,10 @@
   <li>Never</li>
   <li>Object</li>
   </ul>
-    
+  
+  <h4>Aula 06 - Type Inference</h4>
+  <ul>
+  <li>O que é isso?</li>
+  <li>Para que server?</li>
+  </ul>
                                         
