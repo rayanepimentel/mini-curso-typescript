@@ -22,3 +22,30 @@ console.log(ray.age)//acessar propridade especifica desse objeto
 //conseguimos acessar objeto e a propriedade especifica desse objeto
 
 ray.logDetails()//metodo do nosso objeto
+
+//class extends
+//class que-ira-estender extends class que-está-estendendo
+//extends além das propriedades e métodos dela, ela herda todos método e propriedade de quem está estendendo.
+
+class CharAccount extends UserAccount {
+    nickname: string
+    level: number
+
+    //no constructor ele vai receber td as propriedades, a que ele tem e as que herdou
+    constructor(name: string, age: number, nickname: string, level: number) {
+        //agora vamos pegar as propriedades que ele herdou
+        //para isso usamos super()
+        //ele vai pegar as propriedades da nossa class superior, da nossa classe acima.
+        super(name, age)
+
+        this.nickname = nickname
+        this.level = level
+    }
+}
+
+const gui = new CharAccount('Gui', 35, 'goura', 100)
+console.log(gui)
+console.log(gui.name)
+console.log(gui.nickname)
+//metodo
+gui.logDetails

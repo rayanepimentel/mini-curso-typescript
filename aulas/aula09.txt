@@ -18,3 +18,18 @@ nodemon dist/classes.js ou onde estiver o arquivo de js
 
 -> Outra coisa que podemos fazer é criar um método, dentro do nosso objeto.
 Vamos criar um método logDetails, não vai receber nada e vai retornar um void, que vai ser um console.log
+
+Agora vamos criar uma class que extends a class que já temos. Como assim extends?
+Podemos criar uma class que tera suas propriedades e métodos dela, mas além das coisas dela, terá as coisas de quem 
+ela está estendendo. 
+
+Como faz isso?
+
+criamos uma class class CharAccount que vai estender e o nome da classe que está estendendo.
+Class criada com suas propriedades novas, crie o constructor(), no constructor ele via receber todos o valores:
+Das propriedades que ele tem mais as que ele herdou
+
+Para constructor trabalhar com as propriedades que a class herdou, usamos super() e passamos as propriedades dentro de super
+Ex: super(name, age)
+
+Agora crie um objeto
