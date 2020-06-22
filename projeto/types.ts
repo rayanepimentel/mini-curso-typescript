@@ -99,3 +99,21 @@ let cart: object
 cart = {
     key: 123
 }
+
+//Type Inference
+//infere que se foi passado uma string, então essa variável é uma string
+let message2 = "mensagem definida"
+//passado o valor para number ele reconhece ou mostra erro?
+//message2 = 1
+//passando uma nova string
+message2 = "Um novo valor"
+//Poderia ter feito assim?
+let message3: string = "mensagem definida" 
+
+window.addEventListener("click", (e) => {
+    console.log(e.target) 
+    //da mesma forma que ele consegue informar o que existe, ele consegue informar alguma coisa que não existe. Ex:
+    //console.log(e.foo)//ele informa que não tem foo: A propriedade 'foo' não existe no tipo 'MouseEvent'(e)
+})
+//não falamos o que era esse (e), mas com o typescript sabe que esse EventListener vai criar um evento e ele vai ter esse
+//paramentro () como MouseEvent, ele já sabe disso você não precisa fazer isso é um MouseEvent (e: MouseEvent)

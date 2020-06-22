@@ -1,0 +1,32 @@
+- Type Inference // Inferença de tipo
+
+-> O que é isso?
+Se repararmos sempre criamos uma variável, atribuia o valor que essa variável poderia receber e passava o valor para ela;
+let  numeros: number
+numeros = 5
+
+Mas tem vezes que não precisamos criar a variável e depois atribuir o valor da var.
+Posso simplesmente definir o valor dessa variável no inicio.
+
+let message2 = "mensagem definida"
+
+Não precisamos dizer o tipo de message2, se você passar o mouse em message2 ele vai dizer que é uma string.
+Mas pq? 
+Quando passamos o valor ("mensagem definida") no message2 como string, o TypeScript já reconhece o tipo.
+
+Ele faz exatamente isso, ele infere que se foi passado uma string, então essa variável é uma string.
+
+Se tentarmos passar outro valor para essa variável, por exemplo um number o TypeScript vai informar que não pode, porque é uma string.
+message2 = 2
+Ele só vai aceitar valor se for uma string
+message2 = "Um novo valor"
+
+-> Para que serve?
+
+Ele server para exatamente isso, para não evitar de ficar tipando coisas de forma redudante. 
+Poderiamos ter feito let message2: string = "mensagem definida"   ? 
+Sim. Mas não há necessidade, isso é redudante. Eu olho do lado e vejo que é uma string, eu preciso dizer que é uma string?
+Não, eu não preciso, o proprio TypeScript infere isso. Para esses casos ficam bem claro que eu não preciso.
+
+Mas existe outros casos. Digamos que precisamos criar um EventListener, o primeiro paramentro que passamos é o que queremos
+assistir, "click" e depois uma função
