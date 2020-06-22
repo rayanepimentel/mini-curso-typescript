@@ -56,4 +56,11 @@
   <li>O que é isso?</li>
   <li>Para que server?</li>
   </ul>
+  
+  <h4>Aula 07 - Type Aliases e Union</h4>
+  <ul>
+  <li>Union</li>
+  <li>Type Alias - Com tipos</li>
+  <li>Type Alias - Definido</li>
+  </ul>
                                         
