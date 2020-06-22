@@ -33,3 +33,15 @@ Para constructor trabalhar com as propriedades que a class herdou, usamos super(
 Ex: super(name, age)
 
 Agora crie um objeto
+
+-> Modifiers
+O que é? 
+Digamos que tem alguma propriedade que eu não quero que ela não seja modificada depois da criação.
+
+Como assim?
+Temos gui e as propriedades dele, mas digamos que eu queira modificar o nickname do gui por qualquer coisa
+gui.nickname = 'das'
+se vc fizer console.log do todo objeto, verá que o nickname de gui que era Goura, agora é Das. Ou seja, mudou.
+
+Como eu posso fazer para não permitir que isso aconteça?
+

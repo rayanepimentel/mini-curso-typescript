@@ -41,6 +41,10 @@ class CharAccount extends UserAccount {
         this.nickname = nickname
         this.level = level
     }
+
+    logCharDetais(): void {
+        console.log(`O Jagador ${this.name}, tem o personagem ${this.nickname} e tá no nivel ${this.level} `)
+    }
 }
 
 const gui = new CharAccount('Gui', 35, 'goura', 100)
@@ -49,3 +53,5 @@ console.log(gui.name)
 console.log(gui.nickname)
 //metodo
 gui.logDetails
+gui.nickname = 'Das'
+console.log(gui)

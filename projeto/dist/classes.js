@@ -44,6 +44,9 @@ var CharAccount = /** @class */ (function (_super) {
         _this.level = level;
         return _this;
     }
+    CharAccount.prototype.logCharDetais = function () {
+        console.log("O Jagador " + this.name + ", tem o personagem " + this.nickname + " e t\u00E1 no nivel " + this.level + " ");
+    };
     return CharAccount;
 }(UserAccount));
 var gui = new CharAccount('Gui', 35, 'goura', 100);
@@ -52,3 +55,5 @@ console.log(gui.name);
 console.log(gui.nickname);
 //metodo
 gui.logDetails;
+gui.nickname = 'Das';
+console.log(gui);
