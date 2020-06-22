@@ -1,0 +1,47 @@
+- Type Aliases e Intersection
+
+Crie um novo arquivo user.ts
+
+Temos um jogo online com as informação da conta e do personagem dele
+- informação da conta
+- do personagem
+
+-> informação da conta
+
+A primeira coisa que iremos fazer é criar um tipo para essa conta: type AccountInfo e passar as informações
+que a minha conta tem: id, nome e email
+
+Feito isso, declare a conta const account que é do tipo AccountInfo e passar as informações nesse objeto.
+
+Digamos que o email não seja obrigatório e sim opcional, como faremos isso?
+Apague o email que você passou no account, ele mostrar um erro: 
+A propriedade 'email' está ausente no tipo '{ id: number; name: string; }', mas é obrigatória no tipo 'AccountInfo'
+
+Como deixar o email opcional?
+
+coloca o ponto de interrogação no email lá no tipo
+
+type AccountInfo = {
+    id: number,
+    name: string,
+    email?: string
+}
+
+o ? siginifica opcional;
+
+-> informação do personagem
+
+A informação do personagem terá um nickname e um level
+
+type CharInfo = {
+    nickname: string,
+    level: number
+}
+
+Digamos que eu queira PlayerInfo, que será o conjunto de informações conta do usuário e do personagem.
+Como podemos unir esses dois tipos?
+
+Cria um novo tipo e passa a AccountInfo & CharInfo
+
+Estou dizendo que o PlayerInfo é a união a Intersection entre os dois tipos
+
