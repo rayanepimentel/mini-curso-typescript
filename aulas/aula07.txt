@@ -29,7 +29,7 @@ function logInfo(uid: number | string, user: string){
 
 -> Type Aliases
 
-- Alias: Passando com tipos
+- Alias: Passando com tipos 
 
 Só que repare que estamos usando uid: number | string, tanto na funcion logDetails2 e na logInfo
 Como estamos usando a mesma coisa, podemos fazer o seguinte:
@@ -49,3 +49,11 @@ type Plataform = 'Windows' | 'Linux' | 'Mac Os'
 É para isso que serve o type alias:
 para evitar repetição de código ou para ter algo mais definindo certinho no seu código.
 
+Resumo 
+
+Union:
+É quando a variável/paramentro da função pode ter mais de um tipo.
+
+Alias:
+cria um novo tipo mais complexo do que o tipo primitivo.
+Seja criando um novo tipo ou passando a informação direita(definido)
