@@ -63,4 +63,11 @@
   <li>Type Alias - Com tipos</li>
   <li>Type Alias - Definido</li>
   </ul>
+  
+  <h4>Aula 08 - Type Aliases e Intersection</h4>
+  <ul>
+  <li>Type Alias - Não obrigatório</li>
+  <li>Intersection</li>
+  <li>Não obrigatório, Union & Intersection</li>
+  </ul>
                                         
