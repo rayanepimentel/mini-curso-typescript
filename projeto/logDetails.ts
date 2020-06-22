@@ -39,3 +39,22 @@ logDetails3(567, 'roupa')
 
 //com type Alias eu consigo facilitar o meu código para que eu não precise escrever 
 //várias vezes a mesma coisa.
+
+//Alias
+//definindo exatamente o que pode ser
+type Plataform = 'Windows' | 'Linux' | 'Mac Os'
+
+function renderPlataform(plataform: Plataform){
+    return plataform
+}
+
+//se eu passar Linux, que tá definido vai funcionar
+renderPlataform('Linux')
+//se eu passar outra coisa que não foi definido vai funcionar?
+//renderPlataform('ios')
+//O argumento do tipo '"ios"' não é atribuível ao parâmetro do tipo 'Plataform'
+//mas se vc add no tipo Plataform ios, vai funcionar
+
+//é para isso que serve o type alias:
+//para evitar repetição de código 
+//ou para ter algo mais definindo certinho no seu código.
