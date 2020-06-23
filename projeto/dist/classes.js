@@ -25,7 +25,7 @@ var UserAccount = /** @class */ (function () {
 //crie um objeto dessa class
 var ray = new UserAccount('Ray', 28);
 console.log(ray); //acessar o objeto
-console.log(ray.age); //acessar propridade especifica desse objeto
+//console.log(ray.age)//acessar propridade especifica desse objeto
 //conseguimos acessar objeto e a propriedade especifica desse objeto
 ray.logDetails(); //metodo do nosso objeto
 //class extends
@@ -45,7 +45,7 @@ var CharAccount = /** @class */ (function (_super) {
         return _this;
     }
     CharAccount.prototype.logCharDetails = function () {
-        console.log("O Jagador " + this.name + ", tem o personagem " + this.nickname + " e t\u00E1 no nivel " + this.level + " ");
+        console.log("O Jagador " + this.name + ", tem " + this.age + " anos e tem o personagem " + this.nickname + " e t\u00E1 no nivel " + this.level + " ");
     };
     return CharAccount;
 }(UserAccount));

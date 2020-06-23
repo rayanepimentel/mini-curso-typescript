@@ -1,7 +1,7 @@
 
 class UserAccount {
-    name: string
-    age: number
+    public name: string
+    protected age: number
 
     constructor(name: string, age: number){
         this.name = name
@@ -17,7 +17,7 @@ class UserAccount {
 
 const ray = new UserAccount('Ray', 28)
 console.log(ray)//acessar o objeto
-console.log(ray.age)//acessar propridade especifica desse objeto
+//console.log(ray.age)//acessar propridade especifica desse objeto
 
 //conseguimos acessar objeto e a propriedade especifica desse objeto
 
@@ -43,7 +43,7 @@ class CharAccount extends UserAccount {
     }
 
     logCharDetails(): void {
-        console.log(`O Jagador ${this.name}, tem o personagem ${this.nickname} e tá no nivel ${this.level} `)
+        console.log(`O Jagador ${this.name}, tem ${this.age} anos e tem o personagem ${this.nickname} e tá no nivel ${this.level} `)
     }
 }
 

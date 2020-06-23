@@ -81,3 +81,32 @@ Mas se eu tentar mudar o level?
 gui.level = 20
 Ele mostrar um erro:
 Não é possível atribuir a 'level' porque é uma propriedade de somente leitura.
+
+Public
+A a propriedade que ainda não falamos, mas que é implícita é public;
+O que é?
+É quando ela é publica, ou seja vc pode fazer o quer quiser
+public name 
+Você pode mudar o nome, chamar o nome. Não tem nenhuma regra.
+
+Protected
+O que é?
+É quando conseguimos chamar dentro da classe ou da classe que está estendida ela, mas não conseguimos
+chamar fora.
+Por exemplo: temos protected age e na classe que tá estendendo chame age
+
+Apesar de ser protegida eu consigo chamar pela class que tá estendida, mas se eu quiser chamar a propriedade
+age fora ou edita-la, eu não consigo.
+
+Resumo: Só pode ser acessado dentro da class ou subclasses
+
+O protected e o Private são bem parecido, mas a diferença é que o private só é possível dentro daquela class.
+
+
+Resumão:
+
+Private: alterado ou lido fora da class;
+Readonly: Pode ser lido fora da class, mas não pode ser alterado;
+Public: Você pode fazer o que quiser. Pode ser lida/alterado dentro e fora da class/subclasses;
+Protected: Só pode ser acessado dentro da class ou subclasses
+
