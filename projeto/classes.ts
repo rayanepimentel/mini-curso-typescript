@@ -1,5 +1,5 @@
 
-class UserAccount {
+abstract class UserAccount {
     public name: string
     protected age: number
 
@@ -15,13 +15,13 @@ class UserAccount {
 
 //crie um objeto dessa class
 
-const ray = new UserAccount('Ray', 28)
-console.log(ray)//acessar o objeto
+//const ray = new UserAccount('Ray', 28)
+//console.log(ray)//acessar o objeto
 //console.log(ray.age)//acessar propridade especifica desse objeto
 
 //conseguimos acessar objeto e a propriedade especifica desse objeto
 
-ray.logDetails()//metodo do nosso objeto
+//ray.logDetails()//metodo do nosso objeto
 
 //class extends
 //class que-ira-estender extends class que-está-estendendo

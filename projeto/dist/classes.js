@@ -23,11 +23,11 @@ var UserAccount = /** @class */ (function () {
     return UserAccount;
 }());
 //crie um objeto dessa class
-var ray = new UserAccount('Ray', 28);
-console.log(ray); //acessar o objeto
+//const ray = new UserAccount('Ray', 28)
+//console.log(ray)//acessar o objeto
 //console.log(ray.age)//acessar propridade especifica desse objeto
 //conseguimos acessar objeto e a propriedade especifica desse objeto
-ray.logDetails(); //metodo do nosso objeto
+//ray.logDetails()//metodo do nosso objeto
 //class extends
 //class que-ira-estender extends class que-está-estendendo
 //extends além das propriedades e métodos dela, ela herda todos método e propriedade de quem está estendendo.

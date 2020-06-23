@@ -134,3 +134,23 @@ Set ele vai setar um valor.
 Ex: set setLevel(level: number) e definimos essa informação. Ou seja o level pode receber outro valor.
 gui.setLevel = 20 
 
+-> Abstract class
+O que é?
+É basicamente uma class abstrata, onde vc não consegue criar objetos apartir dela.
+Observe que ray, conseguimos criar um objeto de UserAccount, assim como conseguimos com gui CharAccount
+
+Mas por exemplo se passarmos abstract UserAccount, eu estou dizendo que ela é uma class abstrata.
+Ou seja, eu não posso criar objetos apartir dela, mas eu posso estender essa class.
+abstract class é interessante quando queremos criar classe que seja modelo para outras classes, mas
+não permitimos que seja criado nada apartir dela. Conseguimos estender novas Classes, mas não Conseguimos
+criar um novo objeto apartir dela
+
+Resumão aula 09
+Para criarmos classes, usamos a palavra class, sem ideal que utilizamos nome inicial com a letra maiuscula
+Definimos as propriedades e podesmo utilizar os Modifiers
+Consegimos passar os valores pelo constructor, na criação do nossos objetos e fazer a extensão de 
+diferentes métodos, tanto na class principal quanto na seguinte. Temos também os acessos que são get e set,
+onde podemos definir function que vão retornar diferentes valores. Ou definir novos valores para nossas
+propriedades.
+E temos o abstract class, são classes que permitimos cria-la, estender a parte dela, mas nunca criar
+um objeto apartir dessa class abstract
