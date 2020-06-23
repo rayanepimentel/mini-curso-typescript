@@ -25,3 +25,8 @@ As mesmas coisas que vimos em classes, também temos para interfaces
 Definir algo como opcional:
 Por exemplo eu quero que plataform seja opcional, eu passo o ? em plataform na class e no objeto eu 
 posso colocar ou não. Não terá problema.
+
+-> Extends
+Podemos também estender a nossa interface. Para fazer isso, é da seguinte forma:
+Criamos uma nova interface e vamos dizer que ela estende da nossa interface Game:
+interface Dlc extends Game { e passamos a novas propriedades que a interface Dlc teria}
