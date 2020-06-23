@@ -1,0 +1,24 @@
+- Interfaces
+
+As Interfaces são excluivas do TypeScript.
+O que é Interfaces?
+
+É um conjunto de dados para descrever a estrutura de um objeto. Ou seja ela é exclusivamente para objetos. Para descrição 
+de estrutura de objetos.
+
+Crie um arquivo: interfaces.ts 
+Para criar uma Interfaces digite interface + o nome da interface, ex: Game e { } e descreva normalmente
+
+interface criada pode criar um objeto.
+
+Assim como tinhamos o Modifiers nas classes,temos também na interfaces.
+
+-> Modifiers
+
+Digamos que eu não queira que algo seja modificado depois de criado. Ex: depois de definir o genre eu não
+quero mudar. Basta que eu diga que o genre é readonly. Eu consigo chama-lo, mas não modifica-lo.
+Não é possível atribuir a 'genre' porque é uma propriedade de somente leitura.
+
+As mesmas coisas que vimos em classes, também temos para interfaces
+
+
