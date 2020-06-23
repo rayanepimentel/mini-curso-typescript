@@ -29,7 +29,7 @@ ray.logDetails()//metodo do nosso objeto
 
 class CharAccount extends UserAccount {
     private nickname: string
-    readonly level: number
+    level: number
 
     //no constructor ele vai receber td as propriedades, a que ele tem e as que herdou
     constructor(name: string, age: number, nickname: string, level: number) {
@@ -45,6 +45,10 @@ class CharAccount extends UserAccount {
     get getLevel() {
         console.log('********GET*******')
         return this.level
+    }
+
+    set setLevel(level: number) {
+        this.level = level
     }
 
     logCharDetails(): void {
@@ -66,5 +70,5 @@ gui.logCharDetails()//não achou nennhum erro
 console.log(gui.level)
 //gui.level = 20 //retornou com erro
 
-
+gui.setLevel = 20 //mudou
 console.log(gui.getLevel)

@@ -52,6 +52,13 @@ var CharAccount = /** @class */ (function (_super) {
         enumerable: false,
         configurable: true
     });
+    Object.defineProperty(CharAccount.prototype, "setLevel", {
+        set: function (level) {
+            this.level = level;
+        },
+        enumerable: false,
+        configurable: true
+    });
     CharAccount.prototype.logCharDetails = function () {
         console.log("O Jagador " + this.name + ", tem " + this.age + " anos e tem o personagem " + this.nickname + " e t\u00E1 no nivel " + this.level + " ");
     };
@@ -68,4 +75,5 @@ console.log(gui);
 gui.logCharDetails(); //não achou nennhum erro
 console.log(gui.level);
 //gui.level = 20 //retornou com erro
+gui.setLevel = 20; //mudou
 console.log(gui.getLevel);

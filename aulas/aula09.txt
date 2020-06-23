@@ -129,3 +129,8 @@ por exemplo no get coloque console.log
 Resumo: o Get funciona na hora que é chamado como se fosse uma propriedade, mas na verdade é uma function
 com mais informação. 
 
+Set:
+Set ele vai setar um valor. 
+Ex: set setLevel(level: number) e definimos essa informação. Ou seja o level pode receber outro valor.
+gui.setLevel = 20 
+
