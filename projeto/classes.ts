@@ -42,10 +42,17 @@ class CharAccount extends UserAccount {
         this.level = level
     }
 
+    get getLevel() {
+        console.log('********GET*******')
+        return this.level
+    }
+
     logCharDetails(): void {
         console.log(`O Jagador ${this.name}, tem ${this.age} anos e tem o personagem ${this.nickname} e tá no nivel ${this.level} `)
     }
 }
+
+
 
 const gui = new CharAccount('Gui', 35, 'goura', 100)
 console.log(gui)
@@ -58,3 +65,6 @@ console.log(gui)
 gui.logCharDetails()//não achou nennhum erro
 console.log(gui.level)
 //gui.level = 20 //retornou com erro
+
+
+console.log(gui.getLevel)

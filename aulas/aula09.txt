@@ -110,3 +110,22 @@ Readonly: Pode ser lido fora da class, mas não pode ser alterado;
 Public: Você pode fazer o que quiser. Pode ser lida/alterado dentro e fora da class/subclasses;
 Protected: Só pode ser acessado dentro da class ou subclasses
 
+
+-> Set e Get
+
+Basicamente temos esses dois métodos 
+get 
+set 
+
+onde conseguimos pegar valores e propriedades dentro da nossa class.
+Por exemplo, vamos criar um get getLevel, o retorno é level
+
+Como chamamos esse método? 
+o getLevel é da class CharAccount, então eu chamo no console.log gui.getLevel
+Não precisa passar como function() e sim como se fosse uma propriedade mesmo.
+O seja o get vc pode criar por exemplo uma regra de validação, um log...
+por exemplo no get coloque console.log
+
+Resumo: o Get funciona na hora que é chamado como se fosse uma propriedade, mas na verdade é uma function
+com mais informação. 
+
