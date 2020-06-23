@@ -35,6 +35,8 @@ Ex: super(name, age)
 Agora crie um objeto
 
 -> Modifiers
+
+
 O que é? 
 Digamos que tem alguma propriedade que eu não quero que ela não seja modificada depois da criação.
 
@@ -45,3 +47,37 @@ se vc fizer console.log do todo objeto, verá que o nickname de gui que era Gour
 
 Como eu posso fazer para não permitir que isso aconteça?
 
+Private
+
+existe algumas formas, a forma mais pesada é passar a palavra private na propriedade
+private nickname //ou seja eu digo que ele é privado.
+Nenhum lugar externo vai conseguir chamar ou alterar
+
+coloque no nickname a palavra private, ele vai retornar um erro:
+A propriedade 'nickname' é particular e somente é acessível na classe 'CharAccount'
+
+Como assim?
+Crie um novo metodo logCharDetails, não vai receber nada e vai retornar um void, que vai ser um console.log
+
+logCharDetais(): void {
+        console.log(`O Jagador ${this.name}, tem o personagem ${this.nickname} e tá no nivel ${this.level} `)
+    }
+
+E comente gui.nickname = 'Das' e rode gui.logCharDetails() Não achou Nenhum erro
+Ou seja, mesmo com private no nickname ele consegiu chamar sem nenhum problema. Pq?
+
+Pq o private ele me permite chamar a propriedade dentro da class, eu consigo chamar, editar e não terá 
+nenhum problema. Mas se eu chamar do lado de fora, não irá funcionar. 
+
+Resumo: O método private é quando não queremos que seja alterado ou lido fora da class
+
+Tbm temos a opção onde permite que esse objeto seja lido, porém não editavel é o readonly
+
+Readonly
+em level coloque readonly e depois chame console.log()
+console.log(gui.level) //ele irá chamar normalmente
+Mas se eu tentar mudar o level?
+
+gui.level = 20
+Ele mostrar um erro:
+Não é possível atribuir a 'level' porque é uma propriedade de somente leitura.

@@ -28,8 +28,8 @@ ray.logDetails()//metodo do nosso objeto
 //extends além das propriedades e métodos dela, ela herda todos método e propriedade de quem está estendendo.
 
 class CharAccount extends UserAccount {
-    nickname: string
-    level: number
+    private nickname: string
+    readonly level: number
 
     //no constructor ele vai receber td as propriedades, a que ele tem e as que herdou
     constructor(name: string, age: number, nickname: string, level: number) {
@@ -42,7 +42,7 @@ class CharAccount extends UserAccount {
         this.level = level
     }
 
-    logCharDetais(): void {
+    logCharDetails(): void {
         console.log(`O Jagador ${this.name}, tem o personagem ${this.nickname} e tá no nivel ${this.level} `)
     }
 }
@@ -50,8 +50,11 @@ class CharAccount extends UserAccount {
 const gui = new CharAccount('Gui', 35, 'goura', 100)
 console.log(gui)
 console.log(gui.name)
-console.log(gui.nickname)
+//console.log(gui.nickname)
 //metodo
-gui.logDetails
-gui.nickname = 'Das'
+gui.logDetails()
+//gui.nickname = 'Das'
 console.log(gui)
+gui.logCharDetails()//não achou nennhum erro
+console.log(gui.level)
+//gui.level = 20 //retornou com erro
