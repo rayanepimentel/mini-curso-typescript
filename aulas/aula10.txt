@@ -21,4 +21,7 @@ Não é possível atribuir a 'genre' porque é uma propriedade de somente leitur
 
 As mesmas coisas que vimos em classes, também temos para interfaces
 
-
+-> Opcional
+Definir algo como opcional:
+Por exemplo eu quero que plataform seja opcional, eu passo o ? em plataform na class e no objeto eu 
+posso colocar ou não. Não terá problema.

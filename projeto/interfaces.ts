@@ -2,16 +2,16 @@ interface Game {
     title: string;
     description: string;
     readonly genre: string;
-    plataform: string[];
+    plataform?: string[];
     //assinatura do método que vai receber title e vai retorna um void
     getSimilars: (title: string) => void// o retorno (void) poderia ser number, array, qualquer coisa
 }
-
+//objeto
 const tlou: Game = {
     title: 'The Last of Us',
     description: 'the best',
     genre: 'Action',
-    plataform: ['PS3', 'PS4'],
+    //plataform: ['PS3', 'PS4'],
     //agora podemos criar o método de fato
     //falamos que ele recebe title
     getSimilars: (title: string) => {

@@ -1,9 +1,10 @@
 "use strict";
+//objeto
 var tlou = {
     title: 'The Last of Us',
     description: 'the best',
     genre: 'Action',
-    plataform: ['PS3', 'PS4'],
+    //plataform: ['PS3', 'PS4'],
     //agora podemos criar o método de fato
     //falamos que ele recebe title
     getSimilars: function (title) {
