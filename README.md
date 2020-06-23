@@ -73,7 +73,7 @@
   
   <h4>Aula 09 - Classes</h4>
   <ul>
-  <li>Class<li>
+  <li>Class</li>
   <li>Class - Extends</li>
   <li>Class - Modifiers</li>
   <li>Private</li>
