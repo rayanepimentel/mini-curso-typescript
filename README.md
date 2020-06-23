@@ -70,4 +70,18 @@
   <li>Intersection</li>
   <li>Não obrigatório, Union & Intersection</li>
   </ul>
+  
+  <h4>Aula 09 - Classes</h4>
+  <ul>
+  <li>Class<li>
+  <li>Class - Extends</li>
+  <li>Class - Modifiers</li>
+  <li>Private</li>
+  <li>Readonly</li>
+  <li>Public</li>
+  <li>Protected</li>
+  <li>Get</li>
+  <li>Set</li>
+  <li>Abstract class</li>
+  </ul>
                                         
