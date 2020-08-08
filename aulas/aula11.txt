@@ -1,0 +1,118 @@
+- Type Alias vc Interface
+
+
+
+//Para fazer uma definição de type alias
+type nome  = e diz as propriedades
+
+type Game = {
+    title: string
+}
+
+type Dlc = {
+    extra: string
+}
+
+//para interface é muito parecido
+interface nome e não passa o =, como se fosse um obj
+
+interface Game {
+    title: string
+}
+
+interface Dlc {
+    extra: string
+}
+
+//para fazer a união dos dados, o intersection. Extender os dados de um com outro
+basta eu usar no caso do type alas o simbolo de intersection & e no interface eu uso extends
+
+Alias:
+type GameCollection = Game & Dlc
+
+Interface: pode usar com 1 ou com mais interfaces
+interface GameCollection extends Game, Dlc {}
+
+//implements
+é exatamente igual
+
+Alias:
+class CreateGame implements GameCollection {}
+
+Interface:
+class CreateGame implements GameCollection {}
+
+//Para declar função
+
+Alias
+type getSimiliars = (title: string) => void
+
+Interface
+interface getSimiliars {
+    (title: string): void
+}
+
+Até aqui não temos nenhuma diferença.
+
+Agora vamos as diferenças
+
+1. com type alias conseguimos declarar type primitivos.
+Podemos passar um type ID e passar que ele é do tipo string ou number
+
+type ID = string | number
+
+E não conseguimos fazer isso com o interface
+se eu criar uma interface e extends ela tipo number, eu não consigo.
+
+interface ID extends number {}//erro
+
+2. Com type alias eu consigo declarar tuplas normalmente
+
+type tuple = [number, number] //array com 2 numeros
+
+[1, 2, 3] as tuple //se eu passar 3, ele informará que não pode, pq só pode 2
+
+[4, 5] as tuple //vai funcionar
+
+
+Em compensação na interface 
+interface Tuple {
+    0: number
+    1: number
+}
+
+[1, 2, 3] as Tuple //vai funcionar, ele não se importa
+se passar uma string ele vai funcionar. Não vai mostrar erro.
+
+ou seja, não funciona. Não consigo defirnir tuplas na interface
+
+
+3. No type alias, eu só tenho apenas uma declaração por escopo
+
+type exe = { a: string }
+type exe = { b: string }// dará erro, pq eu já tenho um type exe
+
+
+Diferente da interface, se eu tiver por exemplo duas interface exe, ele vai
+emegiar os dois.
+
+Ou seja, pode ter múltiplas declarações e ele une de mesmo nome.
+
+
+interface exe {
+    a: string
+}
+
+interface exe {
+    b: string
+}
+
+cons $: exe = {
+    a: 'bla'
+    b: 'foo'
+}
+
+//Essa é uma vantagem de interface: quando estiver criando uma biblioteca(libs),
+prefira interfaces, porque são mais extensiveis!
+
+//criando mais objetos/classes, com a programação orientada a objetos
