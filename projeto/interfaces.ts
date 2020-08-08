@@ -51,3 +51,17 @@ const leftbehind: Dlc = {
     originalGame: tlou,
     newContent: ['Qualquer coisa']
 }
+
+class CreateGame implements Game {
+    title: string
+    description: string
+    genre: string
+
+    
+    constructor(t: string, d: string, g: string){
+        //e fazer a assinalação
+        this.title = t
+        this.description = d
+        this.genre = g
+    }
+}

@@ -30,3 +30,14 @@ posso colocar ou não. Não terá problema.
 Podemos também estender a nossa interface. Para fazer isso, é da seguinte forma:
 Criamos uma nova interface e vamos dizer que ela estende da nossa interface Game:
 interface Dlc extends Game { e passamos a novas propriedades que a interface Dlc teria}
+
+-> Implementar uma class baseado em uma interface
+Posso criar uma class CreateGame e eu falo que essa class implementa a interface Game.
+Isso significa que a minha class CreateGame precisa ter todos os tipos descrito da interface Game.
+  title: string;
+  description: string;
+  genre: string;
+
+E no  constructor eu preciso fazer essa definição. Ao inves de digitar tudo, eu posso colocar t: string,
+d: string, g: string
+
