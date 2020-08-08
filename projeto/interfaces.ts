@@ -32,15 +32,15 @@ console.log(tlou.genre)
 //tlou.genre = 'New//
 
 
-//estender
+//extender
 //quando fazemos isso, a Dlc tem todas as coisas do Game, mas as coisas que vamos definir para Dlc
 interface Dlc extends Game {
     //a Dlc teria dentro dela um objeto do tipo Game, com todas as informações do jogo original
-    originalGame: Game
-    newContent: string[]
+    originalGame: Game//ou seja a DLC teria um objeto do tipo game
+    newContent: string[]//para descrever as coisas que a Dlc tem
 }
 
-//criar um objeto
+//criar um objeto a partir da interface Dlc
 
 const leftbehind: Dlc = {
     //quando eu faço isso eu preciso passar as informações que o Game tem

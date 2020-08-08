@@ -20,7 +20,7 @@ if (tlou.getSimilars) {
 console.log(tlou.title);
 //chamar Modifiers readonly(só para leitura)
 console.log(tlou.genre);
-//criar um objeto
+//criar um objeto a partir da interface Dlc
 var leftbehind = {
     //quando eu faço isso eu preciso passar as informações que o Game tem
     title: 'The Last of leftbehind',
@@ -30,3 +30,12 @@ var leftbehind = {
     originalGame: tlou,
     newContent: ['Qualquer coisa']
 };
+var CreateGame = /** @class */ (function () {
+    function CreateGame(t, d, g) {
+        //e fazer a assinalação
+        this.title = t;
+        this.description = d;
+        this.genre = g;
+    }
+    return CreateGame;
+}());
