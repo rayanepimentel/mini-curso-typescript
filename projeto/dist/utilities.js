@@ -42,3 +42,20 @@ var todo2 = atualizarTodo(todo, { completed: true });
 //o Partial deixa opcional os campos do Todo
 console.log(todo2);
 console.log(todo);
+var todo3 = {
+    title: 'alguma coisa',
+    completed: false
+};
+var todo4 = {
+    title: 'alguma coisa',
+    completed: false
+};
+//quando eu devo utilizar o Pink ou Omit?
+//vc deve pensar:
+//eu quero pegar mais ou anular mais?
+//se eu quiser anular mais: Pick
+//se eu quiser pegar mais: Omit
+//exemplo, se eu tivesse 5 propriedades
+//e eu quer  4 delas, isso significa que eu quero pegar mais
+//então eu uso o Omit
+//agora se eu quiser pegar só 01, eu uso o Pick

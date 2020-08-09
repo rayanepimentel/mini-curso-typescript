@@ -50,3 +50,34 @@ console.log(todo2)
 console.log(todo)
 
 
+
+//pick
+//digamos que eu só quero passar o title e o completed - lista
+
+type TodoLista = Pick<Todo, 'title' | 'completed'>
+
+const todo3: TodoLista = {
+    title: 'alguma coisa',
+    completed: false
+}
+
+//outra forma é utilizando o omit
+//Omit, ele vai omitir o que vc não quer
+
+type TodoLista2 = Omit<Todo, 'description'>
+
+const todo4: TodoLista = {
+    title: 'alguma coisa',
+    completed: false
+}
+
+//quando eu devo utilizar o Pink ou Omit?
+//vc deve pensar:
+//eu quero pegar mais ou anular mais?
+//se eu quiser anular mais: Pick
+//se eu quiser pegar mais: Omit
+
+//exemplo, se eu tivesse 5 propriedades
+//e eu quer  4 delas, isso significa que eu quero pegar mais
+//então eu uso o Omit
+//agora se eu quiser pegar só 01, eu uso o Pick
