@@ -50,3 +50,45 @@ console.log(new API())
 
 
 
+//propriedade
+//quero fazer uma validação que o titulo precisa se maior que 5
+
+function minLength(length: number) {
+    return (target: any, key: string ) => {
+        // console.log(target)
+        // console.log(key)
+        let val = target[key]
+
+        const getter = () => val
+
+        const setter = (value: string) => {
+            if(value.length < length) {
+                console.log(`Error: você não pode criar ${key} menor que ${length}`)
+            } else {
+                val = value
+            }
+        }
+
+        Object.defineProperty(target, key, {
+            get: getter,
+            set: setter
+        }) 
+    };
+}
+
+
+
+
+class Filme {
+    //validação
+    @minLength(5)
+    titulo: string
+
+    constructor(t: string) {
+        this.titulo = t
+    }
+}
+
+const movie = new Filme('ok')
+console.log(movie.titulo)
+//Error: você não pode criar titulo menor que 5

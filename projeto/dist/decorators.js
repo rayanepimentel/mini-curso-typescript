@@ -79,3 +79,37 @@ var API = /** @class */ (function () {
     return API;
 }());
 console.log(new API());
+//propriedade
+//quero fazer uma validação que o titulo precisa se maior que 5
+function minLength(length) {
+    return function (target, key) {
+        // console.log(target)
+        // console.log(key)
+        var val = target[key];
+        var getter = function () { return val; };
+        var setter = function (value) {
+            if (value.length < length) {
+                console.log("Error: voc\u00EA n\u00E3o pode criar " + key + " menor que " + length);
+            }
+            else {
+                val = value;
+            }
+        };
+        Object.defineProperty(target, key, {
+            get: getter,
+            set: setter
+        });
+    };
+}
+var Filme = /** @class */ (function () {
+    function Filme(t) {
+        this.titulo = t;
+    }
+    __decorate([
+        minLength(5)
+    ], Filme.prototype, "titulo", void 0);
+    return Filme;
+}());
+var movie = new Filme('ok');
+console.log(movie.titulo);
+//Error: você não pode criar titulo menor que 5
