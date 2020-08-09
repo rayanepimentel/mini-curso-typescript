@@ -92,3 +92,45 @@ class Filme {
 const movie = new Filme('ok')
 console.log(movie.titulo)
 //Error: você não pode criar titulo menor que 5
+
+
+
+
+//Método
+
+function esperar(ms: number) {
+    return (target: any, key: string, descriptor: PropertyDescriptor) => {
+        // console.log(target)
+        // console.log(key)
+        // console.log(descriptor)
+        const originalMetodo = descriptor.value
+
+        descriptor.value = function (...args: any) {
+            console.log(`Esperando ${ms}...`)
+            setTimeout(() => {
+                originalMetodo.apply(this, args)
+            }, ms)
+
+            return descriptor
+            
+        }
+    }
+}
+
+
+class Greeter {
+    greeting: string
+
+    constructor(g: string) {
+        this.greeting = g
+    }
+    //vai esperar um tempo e vai rodar o método
+
+    @esperar(3000)
+    greet() {
+        console.log(`Hello, ${this.greeting}`)
+    }
+}
+
+const oi = new Greeter('Ray')
+oi.greet()

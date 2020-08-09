@@ -113,3 +113,39 @@ var Filme = /** @class */ (function () {
 var movie = new Filme('ok');
 console.log(movie.titulo);
 //Error: você não pode criar titulo menor que 5
+//Método
+function esperar(ms) {
+    return function (target, key, descriptor) {
+        // console.log(target)
+        // console.log(key)
+        // console.log(descriptor)
+        var originalMetodo = descriptor.value;
+        descriptor.value = function () {
+            var _this = this;
+            var args = [];
+            for (var _i = 0; _i < arguments.length; _i++) {
+                args[_i] = arguments[_i];
+            }
+            console.log("Esperando " + ms + "...");
+            setTimeout(function () {
+                originalMetodo.apply(_this, args);
+            }, ms);
+            return descriptor;
+        };
+    };
+}
+var Greeter = /** @class */ (function () {
+    function Greeter(g) {
+        this.greeting = g;
+    }
+    //vai esperar um tempo e vai rodar o método
+    Greeter.prototype.greet = function () {
+        console.log("Hello, " + this.greeting);
+    };
+    __decorate([
+        esperar(3000)
+    ], Greeter.prototype, "greet", null);
+    return Greeter;
+}());
+var oi = new Greeter('Ray');
+oi.greet();
