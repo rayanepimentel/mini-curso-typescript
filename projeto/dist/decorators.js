@@ -27,7 +27,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 //class
 //propriedade
 //método
-//paramentro
+//parametro
 //acesso
 //class decorators :
 //decorators sem param

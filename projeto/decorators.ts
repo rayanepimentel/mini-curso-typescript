@@ -9,7 +9,7 @@
 //class
 //propriedade
 //método
-//paramentro
+//parametro
 //acesso
 
 
