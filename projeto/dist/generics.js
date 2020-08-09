@@ -20,17 +20,6 @@ newState.setState('bla');
 console.log(newState.getState());
 newState.setState(456);
 console.log(newState.getState());
-//mas podemos passar que ele pode ser number | string
-//não irá acontecer o erro
-//pq ele pode ser um ou outro
-//mas se após eu definir que
-//seja string, ele não aceite mas number e sim só string, 
-//ou definir number e ele não aceitar mais entradas com string, só number
-//para fazer isso, entra o caso do generics
-//antes do param. passamos o tipo entre < e >
-//dentro de <> vc pode passar qualquer letra
-//e a letra será o tipo e precisamos definir
-//e feita diretamente quando chamamos essa função
 function useState1() {
     var state;
     function getState() {
@@ -54,9 +43,9 @@ var newState1 = useState1(); //quando fizemos isso, estamos dizendo
 //ou seja o generics é flexivel, aceito string ou number
 //mas se vc passar number, eu passo a aceitar somente number
 //e vice-versa
-newState1.setState(1);
-console.log(newState1.getState());
+// newState1.setState(1)
+// console.log(newState1.getState())
 newState1.setState('teste');
 console.log(newState1.getState());
-newState1.setState(false);
-console.log(newState1.getState());
+// newState1.setState(false)
+// console.log(newState1.getState())

@@ -43,7 +43,9 @@ console.log(newState.getState())
 //e a letra será o tipo e precisamos definir
 //e feita diretamente quando chamamos essa função
 
-function useState1<T extends number | string >() {
+type numOrString = number | string
+
+function useState1<T extends numOrString>() {
     let state: T
     
     function getState() {
@@ -74,11 +76,12 @@ const newState1 = useState1<string>()//quando fizemos isso, estamos dizendo
 //mas se vc passar number, eu passo a aceitar somente number
 //e vice-versa
 
-newState1.setState(1)
-console.log(newState1.getState())
+// newState1.setState(1)
+// console.log(newState1.getState())
 
 newState1.setState('teste')
 console.log(newState1.getState())
 
-newState1.setState(false)
-console.log(newState1.getState())
+// newState1.setState(false)
+// console.log(newState1.getState())
+
